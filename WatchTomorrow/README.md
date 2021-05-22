@@ -1,24 +1,28 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+{The purpose of this project is to create a way for someone to store and track movies, tv shows, books etc. that they desire to enjoy at a later point in time. I hope that in the future I will be able to apply what I learn from this project to make a clean and organized platform for this same purpose.}
 
-{Provide a description of your software}
+{The application at its current state allows the user to type in a new item to store in a database, however I wasn’t able to get the database set up correctly the user input doesn’t get stored anywhere. The prompt for the user input is triggered by tapping on the icon in the bottom right of the screen. The input cannot be entered empty and requires something to be entered. }
 
-{Describe your purpose for creating this software.}
+# Demo Video
 
-{Provide a link to your YouTube demonstration.  It should be a one minute demo of the software running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/2Ols0Z9DkuI )
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+{The main program that I used to write the code for this project was Android Studio. Once the code was written I used VisualStudioCode to update the github repository.}
 
-{Describe the programming language that you used}
+{I found the Java programming language to be very similar to C++ and the little experience I had in it was very useful. The different libraries I attempted to use include RecyclerView, SQLiteDatabase, android, DialogInterface, and some other smaller.}
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
-* [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+* [Code Penguin Tutorial](https://www.youtube.com/playlist?list=PLzEWSvaHx_Z2MeyGNQeUCEktmnJBp8136)
+* [w3Schools](https://www.w3schools.com/java/java_intro.asp)
+
+# Future Work
+
+{Make a list of things that you need to fix, improve, and add in the future.}
+* Get the Database to work
+* Add more pages seperating shows, movies, and watched media
+* The code itself is rather messy in in places and needs to be simplified and cleaned up.
