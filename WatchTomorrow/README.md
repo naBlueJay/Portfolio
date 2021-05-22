@@ -15,14 +15,10 @@
 {I found the Java programming language to be very similar to C++ and the little experience I had in it was very useful. The different libraries I attempted to use include RecyclerView, SQLiteDatabase, android, DialogInterface, and some other smaller.}
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 * [Code Penguin Tutorial](https://www.youtube.com/playlist?list=PLzEWSvaHx_Z2MeyGNQeUCEktmnJBp8136)
 * [w3Schools](https://www.w3schools.com/java/java_intro.asp)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 * Get the Database to work
 * Add more pages seperating shows, movies, and watched media
 * The code itself is rather messy in in places and needs to be simplified and cleaned up.
