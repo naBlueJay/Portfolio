@@ -7,10 +7,12 @@ from rest_framework.response import Response
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
 from django.db import connection
+from django.shortcuts import redirect
+
 from . models import URLData
 from . forms import URLDataForm
 from . serializers import URLDataSerializers
-from django.shortcuts import redirect
+
 import sqlite3
 import string
 import random
@@ -23,7 +25,7 @@ BASE_DICT = dict((c, idx) for idx, c in enumerate(BASE_LIST))
 # This is the variable you whould change the base URL for your personal URL
 service_url='http://localhost:8000'
 
-# This function will convert the ID to the full URL
+# This class will convert the ID to the full URL
 class FullURLView(viewsets.ModelViewSet):
     queryset = URLData.objects.all()
     serializers_class = URLDataSerializers
