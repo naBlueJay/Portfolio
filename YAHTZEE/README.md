@@ -1,5 +1,9 @@
 # Overview
 
+The purpose of this project was mainly to see if it would be possible for me to create a large data set that could be used to solve specific questions.
+
+# Data Analysis Results
+
 ## Question 1
 
 ### What is the most common dice combination?
