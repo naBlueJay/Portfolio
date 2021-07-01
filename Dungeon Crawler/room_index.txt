@@ -1,0 +1,37 @@
+Room Types:
+Three chests - 
+    A room containing three chests (as the name implies). 
+    There is a single key on the ground in front of the middle chest.
+    Chest 1: Contains a mimmic (will kill the player if thy open it)
+    Chest 2: Contains an item.
+    Chest 3: Breaks the key and doesn't open.
+
+    The chest placement will be random.
+
+Escape Room - 
+    A room that gives the player the choice to leave the dungeon with their treasure or continue gathering.
+
+Two Doors - 
+    A room containing two doors (as the name implies).
+    Behind one door is a treasure. Once gathered, the player can continue on to the next room.
+    Behind the second door is nothing but the next room.
+
+Chasm -
+    A large room wth a chest on a pillar of stone at the center of a chasm.
+    The only way to access the chest is to cross a rickety roap bridge.
+    There is also a path around the room that leads to the exit of the room.
+    If the player decides to cross the bridge there is a chance the bridge will give out killing the player.
+
+Beast Room -
+    There is a large statue of a monster sleeping at the center of the room.
+    resting on the beast is a small bag.
+    The player has the choice to either skirt the edge of the room to the exit or risk retreiving the bag on the beast.
+
+    If the player skirts the edge of the room there is a small chance they will wake the statue.
+
+    If the player decides to retreive the item there is a high chance of waking the statue.
+
+Potion Room -
+    There is a potion placed on  a small pedestal at the center of the room.
+    The player has the choice to either drink the potion or leave without item.
+    If the player decides to drink the potion they will die (you shouldn't drink something you find in a dungeon... duh...).
