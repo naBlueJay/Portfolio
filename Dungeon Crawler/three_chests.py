@@ -78,7 +78,7 @@ def going_cakeless():
 
     return ""
 
-def room_description():
+def room_description(chest_order):
     print("------------------------------------------------------")
     print(" You find yourself in a small dimly lit room. At the")
     print(" center of the room are three medium-sized chests. As")
@@ -98,18 +98,21 @@ def room_description():
     while True:
         try:
             user_input = int(input("What will you do? "))
+            
+            if 1 <= user_input <= 3:
+                door_choice = chest_order[user_input]
 
-            if user_input == 1:
+            if door_choice == 1:
                 result = open_chest_1()
 
                 return result
 
-            elif user_input == 2:
+            elif door_choice == 2:
                 result = open_chest_2()
 
                 return result
 
-            elif user_input == 3:
+            elif door_choice == 3:
                 result = open_chest_3()
 
                 return result
@@ -138,13 +141,15 @@ def randomize_chests(chest_order):
         total_chests = len(chest_pool)
         random_chest = random.randrange(total_chests)
 
-        chest_order.append(random_chest)
+        chest_order.append(chest_pool[random_chest])
         chest_pool.pop(random_chest)
 
 def three_chests_main(inventory):
     chest_order = []
     randomize_chests(chest_order)
 
-    results = room_description()
+    print (f" Print: {chest_order}")
+
+    results = room_description(chest_order)
 
     return results

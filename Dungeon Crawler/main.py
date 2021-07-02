@@ -1,6 +1,7 @@
 import random
 import three_chests
 import escape_room
+import two_doors
 
 ROOMS = [1, 2, 3, 4, 5]
 
@@ -88,7 +89,7 @@ def visit_room(inventory, room):
     elif room == 2:
         results = escape_room.escape_room_main()
     elif room == 3:
-        pass
+        results = two_doors.tow_doors_main()
     elif room == 4:
         pass
     elif room == 5:
