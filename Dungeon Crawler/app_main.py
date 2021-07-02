@@ -2,6 +2,7 @@ import random
 import three_chests
 import escape_room
 import two_doors
+import cavern
 
 ROOMS = [1, 2, 3, 4, 5]
 
@@ -81,17 +82,17 @@ def generate_dungeon(room_list):
         if generated == True:
             break
 
-def visit_room(inventory, room):
+def visit_room( room):
     results = ""
 
     if room == 1:
-        results = three_chests.three_chests_main(inventory)
+        results = three_chests.three_chests_main()
     elif room == 2:
         results = escape_room.escape_room_main()
     elif room == 3:
         results = two_doors.tow_doors_main()
     elif room == 4:
-        pass
+        results = cavern.cavern_main()
     elif room == 5:
         pass
 
@@ -100,7 +101,6 @@ def visit_room(inventory, room):
 def main():
     play_game = get_menu()
     room_list = []
-    inventory = []
     dungeon_size = 0
 
     while play_game == True:
@@ -111,7 +111,7 @@ def main():
         input("Press ENTER")
         
         for room in range(dungeon_size):
-            result = visit_room(inventory, room_list[0])
+            result = visit_room( room_list[0])
             room_list.pop(0)
 
             if result == "EXIT":

@@ -1,5 +1,5 @@
-import three_chests as file
+import cavern as file
 
 inventory = []
 
-file.three_chests_main(inventory)
+file.cavern_main()

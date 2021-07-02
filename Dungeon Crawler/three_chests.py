@@ -144,7 +144,7 @@ def randomize_chests(chest_order):
         chest_order.append(chest_pool[random_chest])
         chest_pool.pop(random_chest)
 
-def three_chests_main(inventory):
+def three_chests_main():
     chest_order = []
     randomize_chests(chest_order)
 

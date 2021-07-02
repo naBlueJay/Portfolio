@@ -47,8 +47,6 @@ def room_description():
     print(" Even with the signs of ware, the door on the right")
     print(" appears to be well kempt.")
     print()
-    input("Press ENTER")
-    print()
     print(" (1) Take the door on the left")
     print(" (2) Take the door on the right")
     print("------------------------------------------------------")

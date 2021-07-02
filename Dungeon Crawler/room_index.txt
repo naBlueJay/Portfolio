@@ -30,8 +30,3 @@ Beast Room -
     If the player skirts the edge of the room there is a small chance they will wake the statue.
 
     If the player decides to retreive the item there is a high chance of waking the statue.
-
-Potion Room -
-    There is a potion placed on  a small pedestal at the center of the room.
-    The player has the choice to either drink the potion or leave without item.
-    If the player decides to drink the potion they will die (you shouldn't drink something you find in a dungeon... duh...).
