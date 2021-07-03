@@ -4,8 +4,6 @@ import escape_room
 import two_doors
 import cavern
 
-ROOMS = [1, 2, 3, 4, 5]
-
 def print_instructions():
     print("------------------------------------------------------")
     print(" Dungeon Crawler is a game that gives you, the player,")
@@ -50,7 +48,7 @@ def get_menu():
             input("Press ENTER")
 
 def generate_dungeon(room_list):
-    global ROOMS
+    ROOMS = [1, 2, 3, 4]
     rooms = ROOMS
     room_limit = len(ROOMS)
     generated = False
@@ -93,32 +91,43 @@ def visit_room( room):
         results = two_doors.tow_doors_main()
     elif room == 4:
         results = cavern.cavern_main()
-    elif room == 5:
-        pass
 
     return results
 
 def main():
     play_game = get_menu()
-    room_list = []
-    dungeon_size = 0
 
     while play_game == True:
+        room_list = []
+        dungeon_size = 0
+        result = ""
+
         generate_dungeon(room_list)
         dungeon_size = len(room_list)
 
         # print(room_list)
-        input("Press ENTER")
         
         for room in range(dungeon_size):
             result = visit_room( room_list[0])
             room_list.pop(0)
 
             if result == "EXIT":
+                print("------------------------------------------------------")
+                print(" You survived the dungeon... I guess... Try harder")
+                print(" next time.")
+                print("------------------------------------------------------")
                 break
             elif result == "DEAD":
+                print("------------------------------------------------------")
+                print(" You died. Better luck next time.")
+                print("------------------------------------------------------")
                 break
+        
 
+        if result == "":
+            print("------------------------------------------------------")
+            print(" Congradualtions on making it out of the dungeon alive!")
+            print("------------------------------------------------------")
 
         play_game = get_menu()
 

@@ -92,7 +92,6 @@ def room_description(chest_order):
     print(" (3) Use the key on the Right Chest")
     print(" (4) Leave the room without opening any of the chests")
     print("------------------------------------------------------")
-    input("Press ENTER")
     print()
 
     while True:
@@ -100,7 +99,12 @@ def room_description(chest_order):
             user_input = int(input("What will you do? "))
             
             if 1 <= user_input <= 3:
-                door_choice = chest_order[user_input]
+                door_choice = int(chest_order[(user_input - 1)])
+
+            elif user_input == 4:
+                result = going_cakeless()
+
+                return result
 
             if door_choice == 1:
                 result = open_chest_1()
@@ -117,10 +121,7 @@ def room_description(chest_order):
 
                 return result
 
-            elif user_input == 4:
-                result = going_cakeless()
-
-                return result
+            
 
             else:
                 print("Please select a valid option.")
