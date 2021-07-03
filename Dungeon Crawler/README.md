@@ -1,30 +1,21 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This is a text based Choose Your Own Adventure game. I chose to write it using the Python Programming Language. The principle that I was attempting to learn and apply to this project was integrating external python program files to the main file  in order to streamline and maintain my code.
 
-{Provide a description the software that you wrote.}
+The min python file prints the main menu as well as generates the dungeon layout. Once the dungeon has been generated it calls each room file.
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Dungeon Crawler Demo Video](https://youtu.be/wLvDhXWMO84)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+Pretty much the only tool that I used to write the code for this project was Visual Studio Code. Other than that I used notepad to type out my text blocks.
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [StackOverflow](https://stackoverflow.com/)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* I would like to add an item list and item dictionary to allow for randomized item collection and a final score.
+* I initially wanted to have two more rooms, but I ran out of time and was only able to code in 4 total rooms.
+* I was having some problems with the code blocks and had a lot of print statements as a result. In the future I think I would like to restructure the program and either store the text blocks as external text documents, or variables.
