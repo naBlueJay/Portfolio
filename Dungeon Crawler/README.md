@@ -12,7 +12,6 @@ Pretty much the only tool that I used to write the code for this project was Vis
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [StackOverflow](https://stackoverflow.com/)
 
 # Future Work
